@@ -1,0 +1,59 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* Animation Styles */
+.animated {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 0.5s forwards;
+}
+
+.fadeInRight {
+  animation: fadeInRight 0.5s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
